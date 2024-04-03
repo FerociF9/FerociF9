@@ -20,5 +20,9 @@ launch_button.pack()
 exit_button = tk.Button(text="Exit", command=exit_function)
 exit_button.pack()
 
+# Stel de grootte van het venster in
+window.geometry("400x200")
+
 # Start de GUI
 window.mainloop()
+
