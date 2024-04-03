@@ -1,28 +1,31 @@
 import tkinter as tk
 
-# Maakt een venster
+# Maak een venster
 window = tk.Tk()
-window.title("Feroci Beta Software")
+window.title("GUI met knoppen")
 
-# Maak een functie voor de knop "Launch"
-def launch_function():
-  print("De knop 'Launch' is ingedrukt!")
+# Maak functies voor de knoppen
+def new_game_function():
+  print("De knop 'New Game' is ingedrukt!")
 
-# Maak een functie voor de knop "Exit"
-def exit_function():
-  window.destroy()
+def load_game_function():
+  print("De knop 'Load Game' is ingedrukt!")
 
-# Maak een knop "Launch"
-launch_button = tk.Button(text="Launch", command=launch_function)
-launch_button.pack()
+def options_function():
+  print("De knop 'Options' is ingedrukt!")
 
-# Maak een knop "Exit"
-exit_button = tk.Button(text="Exit", command=exit_function)
-exit_button.pack()
+# Maak knoppen
+new_game_button = tk.Button(text="New Game", command=new_game_function)
+load_game_button = tk.Button(text="Load Game", command=load_game_function)
+options_button = tk.Button(text="Options", command=options_function)
+
+# Plaats knoppen in het venster
+new_game_button.pack(side=tk.BOTTOM)
+load_game_button.pack(side=tk.BOTTOM)
+options_button.pack(side=tk.BOTTOM)
 
 # Stel de grootte van het venster in
 window.geometry("400x200")
 
 # Start de GUI
 window.mainloop()
-
