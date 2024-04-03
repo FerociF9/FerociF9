@@ -1,10 +1,12 @@
 import tkinter as tk
 
-# Maak een venster
+# Deze code maakt het venster, import tkinter > tk hiervoor gebruikt
 window = tk.Tk()
 window.title("Feroci Beta 0.1")
 
-# Maak functies voor de knoppen
+# Maak functies voor de knoppen TODO: functie toewijzen aan knoppen
+#Exit_function heeft wel een functie BTW
+
 def new_game_function():
   print("De knop 'New Game' is ingedrukt!")
 
@@ -14,11 +16,10 @@ def load_game_function():
 def options_function():
   print("De knop 'Options' is ingedrukt!")
 
-# Maak een functie voor de knop "Exit"
 def exit_function():
   window.destroy()
 
-# Maak knoppen
+# Maakt daadwerkelijk de knoppen, en de variabelen
 new_game_button = tk.Button(text="New Game", command=new_game_function)
 load_game_button = tk.Button(text="Load Game", command=load_game_function)
 options_button = tk.Button(text="Options", command=options_function)
@@ -33,7 +34,7 @@ load_game_button.pack()
 options_button.pack()
 exit_button.pack()
 
-# Stel de grootte van het venster in
+# Stel de grootte van het venster in 400x200 default
 window.geometry("400x200")
 
 # Start de GUI
