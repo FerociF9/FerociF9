@@ -2,7 +2,7 @@ import tkinter as tk
 
 # Maak een venster
 window = tk.Tk()
-window.title("GUI met knoppen")
+window.title("Feroci Beta 0.1")
 
 # Maak functies voor de knoppen
 def new_game_function():
@@ -20,7 +20,7 @@ load_game_button = tk.Button(text="Load Game", command=load_game_function)
 options_button = tk.Button(text="Options", command=options_function)
 
 # Plaats knoppen in het venster
-new_game_button.pack(side=tk.BOTTOM)
+new_game_button.pack(side=tk.TOP)
 load_game_button.pack(side=tk.BOTTOM)
 options_button.pack(side=tk.BOTTOM)
 
