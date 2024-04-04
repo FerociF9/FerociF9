@@ -2,7 +2,7 @@ import tkinter as tk
 
 # Deze code maakt het venster, import tkinter > tk hiervoor gebruikt
 window = tk.Tk()
-window.title("Feroci Beta 0.1")
+window.title("Feroci Alpha 0.1")
 
 # Maak functies voor de knoppen TODO: functie toewijzen aan knoppen
 #Exit_function heeft wel een functie BTW
